@@ -1,0 +1,33 @@
+body {
+  position: relative;
+}
+
+main {
+  display: flex;
+  position: relative;
+  top: 4rem;
+  z-index: 0;
+  border: 1px solid blue;
+  flex-direction: column;
+}
+
+section {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1500px;
+  position: relative;
+  justify-content: center;
+  padding: 200px;
+}
+
+section img {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.biography-text {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
