@@ -3,9 +3,8 @@ footer {
   width: 100%;
   display: flex;
   justify-content: center;
-  border: 1px solid blue;
   bottom: 0;
-  background-color: black;
+  background-color: white;
 }
 .container {
   padding: 10px;
@@ -13,5 +12,5 @@ footer {
 .container p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
-  color: white;
+  color: black;
 }

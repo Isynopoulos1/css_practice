@@ -8,7 +8,6 @@ main {
   position: relative;
   top: 4rem;
   z-index: 0;
-  border: 1px solid blue;
   flex-direction: column;
   background-color: white;
 }
@@ -18,24 +17,50 @@ section {
   align-items: center;
   flex-direction: column;
   margin: 0 auto;
-  max-width: 1500px;
   position: relative;
   justify-content: center;
-  padding: 200px;
 }
 
-section img {
-  width: 100%;
+.main-banner img {
+  width: 70%;
+  margin-top: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 section video {
   margin-top: 100px;
-  width: 20%;
+  width: 15%;
 }
-.biography-text {
-  text-align: center;
+
+.border {
+  border: 1px solid blue;
+}
+
+.biography {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 300px;
+  padding-right: 300px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.text-container {
+  width: 100%;
+  padding-left: 50px;
+}
+.text-container p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
+}
+
+.biography h2 {
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+.biography img {
+  width: 50%;
+  border-radius: 50px;
 }

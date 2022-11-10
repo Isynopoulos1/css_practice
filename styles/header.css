@@ -5,7 +5,6 @@ header {
   width: 100%;
   height: 4rem;
   z-index: 1;
-  border: 1px solid blue;
   background-color: white;
 }
 header .header-wrapper {
@@ -14,19 +13,19 @@ header .header-wrapper {
   margin: 10px;
   justify-content: space-between;
   align-items: center;
+  padding: 30px;
 }
 
 header img {
-  border: 1px solid blue;
   width: 30px;
   height: auto;
+  cursor: pointer;
 }
 header .nav-main {
   position: relative;
   display: flex;
   width: 200px;
   margin: 10px;
-  border: 1px solid blue;
   justify-content: space-between;
 }
 header .nav-main a {
@@ -34,6 +33,11 @@ header .nav-main a {
   font-size: 14px;
   color: black;
   text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+header .nav-main a:hover {
+  color: violet;
 }
 /* RESPONSIVE RULES */
 @media only screen and (max-width: 700px) {
