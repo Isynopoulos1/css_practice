@@ -1,3 +1,4 @@
+/*BIO SECTION*/
 section img {
   width: 100%;
   margin-top: 50px;
@@ -7,6 +8,7 @@ section img {
   border-radius: 20px;
   margin-top: 50px;
 }
+/*BIO DESCRIPTION*/
 .text-container {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -21,10 +23,11 @@ section img {
 }
 
 .text-container p {
-  font-size: 16px;
+  font-size: 1rem;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
 }
+/*ANIMATED BARS*/
 .animated-container {
   position: relative;
   width: 100%;
@@ -43,6 +46,7 @@ section img {
   color: rgb(135, 128, 171);
   margin-left: 5px;
   margin-bottom: 10px;
+  font-size: 1rem;
 }
 
 .animated-bar {
@@ -64,6 +68,8 @@ section img {
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(135, 128, 171);
   margin-left: 5px;
+  font-size: 10px;
+  margin-top: 5px;
 }
 
 .animation-1 {
@@ -81,11 +87,43 @@ section img {
 
 @keyframes loading {
   from {
-    background-color: rgb(198, 190, 238);
+    background-color: rgb(149, 235, 155);
     width: 0%;
   }
   to {
-    background-color: rgb(149, 235, 155);
+    background-color: rgb(198, 190, 238);
     width: calc(100% - 40px);
   }
+}
+/*FORM SECTION*/
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid blue;
+  margin-bottom: 200px;
+}
+.form__group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.form__group h1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.form__label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
+.form_button_container {
+  display: flex;
+}
+.form_button_container p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
 }
