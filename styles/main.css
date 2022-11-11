@@ -4,9 +4,9 @@ section img {
   margin-top: 50px;
 }
 .biography img {
-  width: 100%;
+  width: calc(100% - 20px);
+  margin: 50px 10px 0 10px;
   border-radius: 20px;
-  margin-top: 50px;
 }
 /*BIO DESCRIPTION*/
 .text-container {
@@ -21,7 +21,6 @@ section img {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
 }
-
 .text-container p {
   font-size: 1rem;
   text-align: center;
@@ -37,7 +36,7 @@ section img {
 }
 .animated-wrapper {
   position: relative;
-  width: 100%;
+  width: calc(100% - 40px);
   padding: 0 20px;
 }
 .animated-wrapper p {
@@ -94,12 +93,32 @@ section img {
     width: calc(100% - 40px);
   }
 }
+/*ALBUM SECTION*/
+.album-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 10px;
+  height: auto;
+}
+.image {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+.image img {
+  width: calc(100% - 20px);
+}
 /*FORM SECTION*/
 
 .form-container {
   display: flex;
   width: 100%;
-  height: 200px;
   flex-direction: column;
   align-items: center;
   margin-bottom: 200px;
@@ -119,6 +138,7 @@ section img {
 }
 .form-container textarea {
   width: 50%;
+  max-height: 200px;
   border-radius: 10px;
   padding: 5px;
   border: 1px solid rgb(198, 190, 238);
@@ -131,4 +151,16 @@ button {
   background-color: rgba(198, 190, 238, 0.633);
   border-radius: 10px;
   padding: 5px;
+}
+
+@media only screen and (min-width: 450px) {
+  .image {
+    width: calc(50% - 10px);
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .image {
+    width: calc(33.3% - 20px);
+  }
 }
