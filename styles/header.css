@@ -13,7 +13,7 @@ header .header-wrapper {
   margin: 10px;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 30px;
+  padding: 10px 10px;
 }
 
 header img {
@@ -33,5 +33,5 @@ header .nav-main a {
 }
 
 header .nav-main a:hover {
-  color: violet;
+  color: rgb(198, 190, 238);
 }

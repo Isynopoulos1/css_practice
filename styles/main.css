@@ -4,12 +4,17 @@ section img {
 }
 .biography img {
   width: 100%;
+  border-radius: 20px;
   margin-top: 50px;
 }
 .text-container {
   margin-top: 50px;
+  margin-bottom: 50px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 .text-container h1 {
+  margin-bottom: 10px;
   font-size: 20px;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
@@ -19,4 +24,68 @@ section img {
   font-size: 16px;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
+}
+.animated-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  border: 1px solid blue;
+  margin-bottom: 50px;
+  padding-top: 20px;
+}
+.animated-wrapper {
+  position: relative;
+  width: 100%;
+  padding: 0 20px;
+}
+.animated-wrapper p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(135, 128, 171);
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+
+.animated-bar {
+  position: relative;
+  animation-iteration-count: infinite;
+  border: 1px solid rgb(198, 190, 238);
+  border-radius: 16px;
+  height: 20px;
+}
+.shadow-bar {
+  position: relative;
+  top: -22px;
+  width: calc(100% - 40px);
+  height: 20px;
+  border-radius: 16px;
+  border: 1px solid rgb(198, 190, 238);
+}
+.shadow-bar p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(135, 128, 171);
+  margin-left: 5px;
+}
+
+.animation-1 {
+  animation-name: loading;
+  animation-duration: 10s;
+}
+.animation-2 {
+  animation-name: loading;
+  animation-duration: 5s;
+}
+.animation-3 {
+  animation-name: loading;
+  animation-duration: 2s;
+}
+
+@keyframes loading {
+  from {
+    background-color: rgb(198, 190, 238);
+    width: 0%;
+  }
+  to {
+    background-color: rgb(149, 235, 155);
+    width: calc(100% - 40px);
+  }
 }
