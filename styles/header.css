@@ -13,19 +13,15 @@ header .header-wrapper {
   margin: 10px;
   justify-content: space-between;
   align-items: center;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding: 30px 30px;
 }
 
 header img {
   width: 30px;
-  height: auto;
-  cursor: pointer;
 }
 header .nav-main {
   position: relative;
-  display: flex;
-  width: 200px;
+  display: none;
   justify-content: space-between;
 }
 header .nav-main a {
@@ -38,39 +34,4 @@ header .nav-main a {
 
 header .nav-main a:hover {
   color: violet;
-}
-
-/* RESPONSIVE RULES */
-/* XX-Large devices (larger desktops, 1400px and up) */
-@media only screen and (max-width: 1400px) {
-  header .nav-main {
-    display: flex;
-  }
-}
-
-/* Large devices (desktops, 992px and up) */
-@media only screen and (max-width: 992px) {
-  header .nav-main {
-    display: none;
-  }
-  header .header-wrapper {
-    margin-top: 50px;
-  }
-  header img {
-    width: 50px;
-  }
-}
-
-/* Medium devices (tablets, 768px and up)  */
-@media only screen and (max-width: 768px) {
-}
-
-/* Small devices (landscape phones, 576px and up) */
-@media only screen and (max-width: 576px) {
-  header {
-    height: 8rem;
-  }
-  header img {
-    width: 40px;
-  }
 }

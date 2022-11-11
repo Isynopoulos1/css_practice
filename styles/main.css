@@ -1,95 +1,22 @@
-body {
-  position: relative;
-}
-
-main {
-  display: flex;
-  align-items: center;
-  position: relative;
-  top: 4rem;
-  z-index: 0;
-  flex-direction: column;
-  background-color: white;
-}
-
-section {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin: 0 auto;
-  position: relative;
-  justify-content: center;
-}
-
-.main-banner img {
-  width: 70%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-/*GENERAL BORDER TO CREATE THE WIREFRAME*/
-.border {
-  border: 1px solid blue;
-}
-/*GENERAL MARGIN IN EVERY SECTION*/
-.margin-top {
+section img {
+  width: 100%;
   margin-top: 50px;
 }
-.biography {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 200px 300px;
+.biography img {
+  width: 100%;
+  margin-top: 50px;
 }
 .text-container {
-  width: 100%;
+  margin-top: 50px;
 }
-.text-container p {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  text-align: center;
-}
-
-.biography h2 {
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+.text-container h1 {
   font-size: 20px;
-}
-.biography img {
-  border-radius: 50px;
-}
-
-/* RESPONSIVE RULES */
-/* XX-Large devices (larger desktops, 1400px and up) */
-@media only screen and (max-width: 1400px) {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Large devices (desktops, 992px and up) */
-@media only screen and (max-width: 992px) {
-}
-
-/* Medium devices (tablets, 768px and up)  */
-@media only screen and (max-width: 768px) {
-}
-
-/* Small devices (landscape phones, 576px and up) */
-@media only screen and (max-width: 576px) {
-  .biography {
-    padding: 0;
-  }
-  .biography img {
-    border-radius: 50px;
-    width: 90%;
-  }
-  .biography h2 {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-  }
-  .text-container p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    text-align: center;
-  }
+.text-container p {
+  font-size: 16px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
