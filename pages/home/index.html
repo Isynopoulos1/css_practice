@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello, world?</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
     <link rel="stylesheet" href="/styles/reset.css" />
     <link rel="stylesheet" href="/styles/header.css" />
     <link rel="stylesheet" href="/styles/main.css" />
@@ -13,22 +17,23 @@
   <body>
     <!--HEADER SECTION-->
     <!--NAV-->
-    <header class="border">
+    <header>
       <div class="header-wrapper">
-        <a href="#" class="border"
-          ><img src="/images/logo/pw.png" alt="logo-ia"
-        /></a>
-        <nav class="nav-main border" id="nav-main">
-          <a href="#me">Me</a>
-          <a href="#">Perritos waiting</a>
-          <a href="#">Contact</a>
-        </nav>
+        <a href="#"><img src="/images/logo/pw.png" alt="logo-ia" /></a>
+        <div class="nav-menu">
+          <span class="material-symbols-outlined">menu</span>
+          <nav class="nav-main">
+            <a href="#me">Me</a>
+            <a href="#perritos">Perritos waiting</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
       </div>
     </header>
 
     <!--MAIN SECTION-->
     <!--MAIN BANNER-->
-    <main class="border">
+    <main>
       <section class="main-banner">
         <img src="/images/home/dog-mainbanner2png.png" alt="main-banner" />
       </section>
@@ -38,14 +43,14 @@
         <div class="text-container">
           <h1>Hi human</h1>
           <p>
-            I'm Isela UI/UX designer and big fan of dogs. One of the things that
-            I like the most about Barcelona is the amount of cute and well
-            educated dogs that I see on the street. I called this project:
+            I'm Isela, UI/UX designer and a big fan of dogs. One of the things
+            what I like the most about Barcelona is the amount of cute and
+            well-educated dogs that I see on the street. I called this project:
             "Perritos Waiting". Waiting for their owners outside the shops,
-            supermarkets, xarcuteries, bakeries, hum... everywhere! I can't
+            supermarkets, charcuteries, bakeries, hum... everywhere! I can't
             avoid taking photos of them, and I want to share some of my random
-            photos in this site. So, if you are like me, you'll enjoy this
-            random website, I hope you like it!
+            photos on this site. So, if you are like me, you'll enjoy this corny
+            website, I hope you like it!
           </p>
         </div>
       </div>
@@ -66,7 +71,7 @@
         </div>
       </div>
       <!--ALBUM SECTION-->
-      <div class="album-container">
+      <div class="album-container" id="perritos">
         <div class="image">
           <img src="/images/perritos/1.png" alt="logo-ia" />
         </div>
@@ -88,7 +93,7 @@
       </div>
 
       <!--FORM SECTION-->
-      <div class="form-container">
+      <div class="form-container" id="contact">
         <p>Contact us</p>
         <input type="text" placeholder="Name" name="" id="Name" required />
         <input type="text" placeholder="@GitHub"name="GitHub" id="GitHub"

@@ -113,6 +113,7 @@ section img {
 }
 .image img {
   width: calc(100% - 20px);
+  border-radius: 10px;
 }
 /*FORM SECTION*/
 

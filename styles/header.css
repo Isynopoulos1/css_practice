@@ -7,7 +7,12 @@ header {
   z-index: 1;
   background-color: white;
 }
-header .header-wrapper {
+
+header img {
+  width: 30px;
+}
+
+.header-wrapper {
   display: flex;
   width: 100%;
   margin: 10px;
@@ -16,22 +21,54 @@ header .header-wrapper {
   padding: 10px 10px;
 }
 
-header img {
-  width: 30px;
-}
-header .nav-main {
+.nav-menu {
   position: relative;
+  cursor: pointer;
+}
+
+.nav-main {
+  position: absolute;
+  right: 0;
+  width: 120px;
   display: none;
+  text-align: right;
+  line-height: 1.5;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid #ddd;
+  flex-direction: column;
   justify-content: space-between;
 }
-header .nav-main a {
+
+.nav-menu:hover .nav-main {
+  display: flex;
+}
+
+.nav-main a {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
+  margin-left: 10px;
   color: black;
   text-decoration: none;
   transition: all 0.3s ease;
 }
 
-header .nav-main a:hover {
+.nav-main a:hover {
   color: rgb(198, 190, 238);
 }
+/*RESPONSIVE RULES*/
+@media only screen and (min-width: 1400px) {
+  .nav-menu span {
+    display: none;
+  }
+  .nav-main {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: unset;
+    width: inherit;
+    background-color: unset;
+    padding: 0;
+  }
+} ;
