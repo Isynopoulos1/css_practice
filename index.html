@@ -98,6 +98,7 @@
         <input type="text" placeholder="Name" name="" id="Name" required />
         <input type="text" placeholder="@GitHub"name="GitHub" id="GitHub"
         required pattern="^@[^\s]+""/>
+        <input type="number" name="phone" id="" />
         <textarea
           name="message"
           placeholder="Type you message "
@@ -106,6 +107,18 @@
           cols="68"
           rows="80"
         ></textarea>
+        <form>
+          <fieldset>
+            <legend>Do you want to suscribe you to the newsletter?</legend>
+            <div class="radio">
+              <input type="radio" id="yes" name="suscribe" />
+              <label class="radio" for="yes">Yes</label>
+
+              <input type="radio" id="no" name="suscribe" />
+              <label for="no">No</label>
+            </div>
+          </fieldset>
+        </form>
         <button>:)</button>
       </div>
     </main>
